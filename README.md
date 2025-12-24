@@ -1,46 +1,47 @@
-# SQL-Practice-Problems-SQL-Server-Solutions
-SQL Practice Problems — SQL Server Solutions
+📘 SQL Practice Problems — SQL Server Solutions
 
-Overview
+🔍 Overview
 
-This repository contains production-quality SQL Server solutions to the problems in SQL Practice Problems by Sylvia Moestl Vasilik.
+This repository contains production-quality SQL Server solutions to the problems in
+SQL Practice Problems by Sylvia Moestl Vasilik.
 
-It is not a dump of answers.
-It is a curated record of analytical reasoning, defensive SQL patterns, and performance-aware query design — the kind required in real analytics and data engineering work.
+It is not a collection of copied answers.
 
-The focus throughout is on:
+It is a curated record of analytical reasoning, defensive SQL patterns, and performance-aware query design — the kind required in real analytics, BI, and data engineering work.
 
-Asking the right question
+The emphasis throughout is on:
+
+Asking the right questions
 
 Choosing the correct data grain
 
 Writing clear, correct, and maintainable SQL
 
-Anticipating edge cases (NULLs, duplicates, datetime traps)
+Anticipating edge cases (NULLs, duplicates, datetime pitfalls)
 
-Thinking beyond syntax toward decision-ready insight
+Producing decision-ready insight, not just query output
 
-🎯 Purpose of This Repository
+🎯 Purpose
 
-This repository exists to demonstrate:
+This repository exists to demonstrate how SQL is used in real environments to:
 
-How to reason with relational data under real-world constraints
+Reason with relational data under ambiguity
 
-How analytical SQL supports business decisions
+Translate business questions into analytical logic
 
-How small design choices (joins, filters, grouping) materially affect results
+Avoid silent data errors caused by poor joins, filters, or grouping
 
-How to write SQL that is readable, explainable, and performant
+Write SQL that is explainable, testable, and scalable
 
-It is designed for:
+It is intended for:
 
 Data Analysts
 
 Data Engineers
 
-BI Developers
+BI / Analytics Engineers
 
-Anyone who wants to move from writing SQL to thinking in SQL
+Anyone aiming to move from writing SQL to thinking in SQL
 
 🗂️ Repository Structure
 sql-practice-problems-sql-server/
@@ -81,103 +82,111 @@ sql-practice-problems-sql-server/
 └── README.md
 
 📚 Folder Breakdown
-🟢 01_introductory/
+🟢 01_introductory
 
-Focuses on fundamentals done properly:
+Foundations done properly
 
-SELECT patterns with intent
+Focus areas:
 
-Filtering and sorting without surprises
+Intentional SELECT statements
 
-Date handling (date vs datetime)
+Filtering without surprises
 
-String and numeric functions used correctly
+Correct sorting and ordering
+
+Date vs. datetime handling
+
+String and numeric functions used safely
 
 Emphasis: clarity, correctness, and habit formation.
 
-🟡 02_intermediate/
+🟡 02_intermediate
 
-Introduces analytical thinking:
+Analytical reasoning begins
 
-Multi-table joins and relationship reasoning
+Focus areas:
 
-Aggregations and GROUP BY at the correct grain
+Multi-table joins and relationship logic
 
-NULL-aware logic
+Aggregations at the correct grain
+
+NULL-aware calculations
 
 CASE expressions for business rules
 
-Subqueries and validation checks
+Subqueries and data validation checks
 
 Emphasis: logic, assumptions, and data integrity.
 
-🔴 03_advanced/
+🔴 03_advanced
 
-Deals with real-world complexity:
+Real-world complexity
 
-Window functions for ranking and comparison
+Focus areas:
 
-Time-based analysis (periods, trends, rolling logic)
+Window functions and ranking logic
+
+Time-based analysis and trends
 
 Deduplication and anomaly detection
 
-Performance-aware query patterns
+Performance-aware query design
 
 Execution plan considerations (SQL Server)
 
-Emphasis: scalability, performance, and professional-grade SQL.
+Emphasis: scalability, performance, and professional rigor.
 
 🧠 Coding Philosophy
 
-Every SQL file follows these principles:
+Every SQL file follows consistent principles:
 
 Queries are commented to explain intent, not just mechanics
 
 Intermediate steps are preferred over clever one-liners
 
-Defensive SQL is used where data may break assumptions
+Defensive SQL is used where assumptions may break
 
-Readability is prioritized over brevity
+Readability is prioritised over brevity
 
-Performance implications are acknowledged when relevant
+Performance implications are acknowledged where relevant
 
 Example comment style:
 
 -- Aggregate at order level first to prevent join multiplication
--- before rolling up to customer grain
+-- before rolling up to the customer grain
 
 🧪 Database Used
-
-The solutions are written for:
 
 SQL Server
 
 A modified Northwind-style database (as used in the book)
 
-Note: These queries may require minor syntax adjustments for PostgreSQL or MySQL.
+⚠️ Note: Queries may require minor syntax adjustments for PostgreSQL or MySQL.
 
 🚀 How to Use This Repository
 
 Clone the repository
 
-Open queries in SQL Server Management Studio (SSMS)
+Open scripts in SQL Server Management Studio (SSMS)
 
 Run queries section by section
 
-Read the comments before reading the results
+Read the comments before reviewing results
 
-Modify queries to test edge cases and assumptions
+Modify queries to test assumptions and edge cases
 
-This repository is most valuable when used actively, not passively.
+This repository delivers the most value when used actively, not passively.
 
 ⚠️ Disclaimer
 
-These solutions represent one correct and reasoned approach, not the only approach.
-SQL is a language of trade-offs — and those trade-offs are documented where they matter.
+These solutions represent one reasoned approach, not the only possible approach.
+
+SQL is a language of trade-offs — and where those trade-offs matter, they are documented.
 
 💬 Final Thought
 
 SQL doesn’t fail teams.
 Thinking does.
 
-If this repository helps sharpen how you think about data — it has done its job.
+If this repository sharpens how you reason about data,
+then it has done its job.
